@@ -4,15 +4,16 @@
         <meta charset="UTF-8">
         <title> Tomagotchi Game </title>
         <link href="styling.css" rel="stylesheet" type="text/css"> 
+        <script defer type="text/javascript" src="ui.js"></script>
     </head>
 
     <body>
         <div id="icons"> 
-            <img src = "/images/dress_pl.png"> 
+            <img id="dress" src = "/images/dress_pl.png"> 
             <br>
-            <img src = "images/flag_pl.png">
+            <img id="flag" src = "images/flag_pl.png">
             <br> 
-            <img src = "images/light_pl.png"> 
+            <img id="light" src = "images/light_pl.png"> 
         </div>
 
 
@@ -30,17 +31,3 @@
     </body>
 </html>
 
-<script defer>
-
-var txt = document.getElementById('textbox'); 
-// txt.style.visbility = hidden; 
-
-const textArea = document.getElementById("txtarea"); 
-textArea.addEventListener('click', Name(), {
-}); 
-    function Name() {
-        const name_val = textArea.value; 
-        console.log(name_val); 
-        // txt.style.visibility = visible; 
-    }
-</script>

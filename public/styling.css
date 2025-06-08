@@ -7,8 +7,10 @@
 
 #tomagotchi_frame {
     display: inline-block; 
-    width: 100vh;  
-    height: 100vh;
+    width: 65vh;  
+    height: 65vh;
+    vertical-align: top;
+    margin-top: -90px;
 }
 
 #textbox {
@@ -18,6 +20,25 @@
     background-size: contain; 
     background-repeat: no-repeat; 
     background-position: center; 
-    width: 150vh; 
-    height: 40vh; 
+    width: 100vh; 
+    height: 30vh; 
 }
+
+/* #icons {
+    margin-top: 50px;
+}
+
+#dress {
+    width: 65px; 
+    height: 65px; 
+}
+
+#flag {
+    width: 65px; 
+    height: 65px; 
+}
+
+#light {
+    width: 65px; 
+    height: 65px; 
+} */
