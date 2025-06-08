@@ -17,11 +17,15 @@
     display: flex; 
     justify-content: center;
     background-image: url('/images/textbox_pl.png');
-    background-size: contain; 
+    background-size: cover; 
     background-repeat: no-repeat; 
     background-position: center; 
     width: 100vh; 
     height: 30vh; 
+}
+
+#textbox > p {
+    margin-top: 120px;
 }
 
 /* #icons {
