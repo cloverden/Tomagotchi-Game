@@ -1,0 +1,23 @@
+
+#toma {
+    display: flex; 
+    justify-content: flex-end; 
+}
+
+
+#tomagotchi_frame {
+    display: inline-block; 
+    width: 100vh;  
+    height: 100vh;
+}
+
+#textbox {
+    display: flex; 
+    justify-content: center;
+    background-image: url('/images/textbox_pl.png');
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    width: 150vh; 
+    height: 40vh; 
+}

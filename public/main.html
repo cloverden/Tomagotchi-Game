@@ -3,25 +3,30 @@
     <head> 
         <meta charset="UTF-8">
         <title> Tomagotchi Game </title>
+        <link href="styling.css" rel="stylesheet" type="text/css"> 
     </head>
 
     <body>
         <div id="icons"> 
             <img src = "/images/dress_pl.png"> 
+            <br>
             <img src = "images/flag_pl.png">
+            <br> 
             <img src = "images/light_pl.png"> 
         </div>
 
 
         <div id="toma">
             <figure> 
-                <img alt="tomagotchi" src="/images/toma_pl.png"> 
+                <img id="tomagotchi_frame" alt="tomagotchi" src="/images/toma_pl.png"> 
             </figure>
         </div>
 
         <textarea id="txtarea"> Name Your Pet </textarea>
         <button onclick="Name()" id="save_name">OK</button>
-        <img id="textbox" src="/images/textbox_pl.png"> 
+        
+        <div id="textbox">
+        </div>
     </body>
 </html>
 
