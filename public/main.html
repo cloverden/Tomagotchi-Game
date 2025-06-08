@@ -1,0 +1,41 @@
+<!DOCTYPE html> 
+<html lang="En"> 
+    <head> 
+        <meta charset="UTF-8">
+        <title> Tomagotchi Game </title>
+    </head>
+
+    <body>
+        <div id="icons"> 
+            <img src = "/images/dress_pl.png"> 
+            <img src = "images/flag_pl.png">
+            <img src = "images/light_pl.png"> 
+        </div>
+
+
+        <div id="toma">
+            <figure> 
+                <img alt="tomagotchi" src="/images/toma_pl.png"> 
+            </figure>
+        </div>
+
+        <textarea id="txtarea"> Name Your Pet </textarea>
+        <button onclick="Name()" id="save_name">OK</button>
+        <img id="textbox" src="/images/textbox_pl.png"> 
+    </body>
+</html>
+
+<script defer>
+
+var txt = document.getElementById('textbox'); 
+// txt.style.visbility = hidden; 
+
+const textArea = document.getElementById("txtarea"); 
+textArea.addEventListener('click', Name(), {
+}); 
+    function Name() {
+        const name_val = textArea.value; 
+        console.log(name_val); 
+        // txt.style.visibility = visible; 
+    }
+</script>
