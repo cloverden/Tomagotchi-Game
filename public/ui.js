@@ -17,16 +17,41 @@ const textArea = document.getElementById("txtarea");
 
     function Name() {
         const name_val = textArea.value; 
+        sessionStorage.setItem("petName", name_val); //key, value
         console.log(name_val); 
         // txt.style.visibility = visible; 
     }; 
 document.addEventListener("DOMContentLoaded", Name); 
 
 
+//icons
 const texter = document.getElementById("text"); 
-function dress() {
-    console.log("fired"); 
-    var info = "Dress Up Your Pet"; 
+function dress_in() {
+    console.log("di_fired"); 
+    var info = "Dress up" + " " + sessionStorage.getItem("petName"); 
     document.getElementById("text").innerText = info; 
 }; 
+
+function status_in() {
+    console.log("si_fired"); 
+    var info = "Check up on" + " " + sessionStorage.getItem("petName"); 
+    document.getElementById("text").innerText = info; 
+}
+
+function lights_in() {
+    console.log("li_fired"); 
+    var info = "Change the lights"; 
+    document.getElementById("text").innerText = info; 
+}
+
+function mouse_out() {
+    console.log("mo_fired"); 
+    var info = "Text"; 
+    document.getElementById("text").innerText = info; 
+}
+
+//mouseout frame delay
+if(mouse_out()) {
+    setTimeout(4000); //1000 miliseconds = 1 second
+}
 
