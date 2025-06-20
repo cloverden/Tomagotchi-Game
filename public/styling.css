@@ -23,9 +23,10 @@
     background-position: center; 
     width: 100vh; 
     height: 30vh; 
+    margin-top: -50px;
 }
 
-#textbox > p {
+#textbox > span {
     display: none; 
     text-align: center;
     vertical-align: middle;

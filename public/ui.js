@@ -58,12 +58,14 @@ function dress_in() {
 function status_in() {
     console.log("si_fired"); 
     var info = "Check up on" + " " + sessionStorage.getItem("petName"); 
+    texter.style.display = "block"; 
     document.getElementById("text").innerText = info; 
 }
 
 function lights_in() {
     console.log("li_fired"); 
     var info = "Change the lights"; 
+    texter.style.display = "block"; 
     document.getElementById("text").innerText = info; 
 }
 
@@ -71,11 +73,5 @@ function mouse_out() {
     console.log("mo_fired"); 
     var info = "Text"; 
     document.getElementById("text").innerText = info; 
-    texter.style.display = "none"; 
+    texter.style.display = "none";
 }
-
-//^ frame delay
-if(mouse_out()) {
-    setTimeout(4000); //1000 miliseconds = 1 second
-}
-
