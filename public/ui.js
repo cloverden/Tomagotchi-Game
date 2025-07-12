@@ -6,7 +6,7 @@ const textArea_b = document.getElementById("save_name");
 
     function Name() {
         const name_val = textArea.value; 
-        sessionStorage.setItem("petName", name_val); //key, value
+        sessionStorage.setItem("petName", name_val); //key, value 
         console.log(name_val); 
         txt_tog(); 
         txtarea_tog(); 
