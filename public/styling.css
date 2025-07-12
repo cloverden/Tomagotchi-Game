@@ -14,17 +14,27 @@
 }
 
 #pet {
-    display:flex; 
-    justify-content: flex-end;
+    display: inline-block;
+    height: 300px;
+    width: 300px; 
+    float: right; 
+    padding: 5px;
+    margin: 5px; 
+  
 }
 
 #pet_sprite { 
-    display: inline-block; 
+    height: 100%;
+    width: 100%; 
+    object-fit: contain; 
+
+    /* display: inline-block; 
     width: 35vh; 
     height: 35vh; 
+
     vertical-align: top; 
     margin-left: -450px;
-    margin-top: -5px; 
+    margin-top: -390px;  */
 } 
 
 #textbox {
