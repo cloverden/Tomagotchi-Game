@@ -7,8 +7,8 @@
 
 #tomagotchi_frame {
     display: inline-block; 
-    width: 65vh;  
-    height: 65vh;
+    width: 470px;
+    height: 470px;
     vertical-align: top;
     margin-top: -90px;
 }
@@ -18,9 +18,8 @@
     height: 300px;
     width: 300px; 
     float: right; 
-    padding: 5px;
-    margin: 5px; 
-  
+    margin-right: 185px; 
+    margin-top: -378px;
 }
 
 #pet_sprite { 
