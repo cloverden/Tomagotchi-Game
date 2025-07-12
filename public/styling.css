@@ -13,6 +13,20 @@
     margin-top: -90px;
 }
 
+#pet {
+    display:flex; 
+    justify-content: flex-end;
+}
+
+#pet_sprite { 
+    display: inline-block; 
+    width: 35vh; 
+    height: 35vh; 
+    vertical-align: top; 
+    margin-left: -450px;
+    margin-top: -5px; 
+} 
+
 #textbox {
     display: none; 
     /* display: flex;  */
