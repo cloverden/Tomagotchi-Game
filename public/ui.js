@@ -36,13 +36,26 @@ function txtarea_tog()  {
 
 //window function 
 var top_window = document.getElementById("win"); 
-function win_tog() { 
+function win_tog(icon) { 
     if(top_window.style.display == "none") {
         top_window.style.display = "block"; 
     } else {
-        top_window.style.display = "none"; 
+        if(top_window.dataset.active === icon){
+            top_window.style.display = "none"; 
+        }
     }
-    console.log("Window fired"); 
+    
+    switch(icon) {
+        case 'bow':
+            top_window.style.backgroundImage = "url('images/dress_up_w_pl.png')"; 
+            break; 
+        case 'flag':
+            top_window.style.backgroundImage = "url('images/status_w_pl.png')"; 
+            break; 
+    }
+
+    top_window.dataset.active = icon;
+    console.log("Window fired via ", icon); 
 }
 
 //icons

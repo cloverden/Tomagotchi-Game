@@ -8,12 +8,12 @@
     </head>
 
     <body>
-        <div id="icons"> 
-            <img id="bow" onclick="win_tog()" onmouseover="dress_in()" onmouseout="mouse_out()" src = "/images/dress_pl.png"> 
+        <div id="icons"> <!-- win_tog() activates for all icon elements -->
+            <img id="bow" onclick="win_tog('bow')" onmouseover="dress_in()" onmouseout="mouse_out()" src = "/images/dress_pl.png"> 
                 <div id="win"> 
                 </div>
             <br>
-            <img onmouseover="status_in()" onmouseout="mouse_out()" id="flag" src = "images/flag_pl.png">
+            <img id="flag" onclick="win_tog('flag') "onmouseover="status_in()" onmouseout="mouse_out()" src = "images/flag_pl.png">
             <br> 
             <img id="light" onmouseover="lights_in()" onmouseout="mouse_out()" src = "images/light_pl.png"> 
         </div>
