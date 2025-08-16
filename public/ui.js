@@ -18,12 +18,13 @@ var m_note = document.getElementById("note");
 function tap() {
     m_note.style.display = "block"; 
     console.log("tapped"); 
+
+    setTimeout(tap_out, 800); //delay
 }
 function tap_out() {
     m_note.style.display = "none"; 
     console.log("tapped out"); 
 }
-setTimeout(tap_out, 3000); 
 
 //textbox visibility 
 txtbox = document.getElementById("textbox"); 
