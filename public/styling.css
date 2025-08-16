@@ -36,6 +36,11 @@
     margin-top: -390px;  */
 } 
 
+#ABC {
+    margin-top: 135px; 
+    text-align: center; 
+}
+
 /* window boxes */ 
 #win {
     display: none; 

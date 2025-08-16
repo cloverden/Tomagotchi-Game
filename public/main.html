@@ -8,7 +8,7 @@
     </head>
 
     <body>
-        <div id="icons"> <!-- win_tog() activates for all icon elements -->
+        <div id="icons"> 
             <img id="bow" onclick="win_tog('bow')" onmouseover="dress_in()" onmouseout="mouse_out()" src = "/images/dress_pl.png"> 
                 <div id="win"> 
                 </div>
@@ -23,16 +23,22 @@
             <figure> 
                 <img id="tomagotchi_frame" alt="tomagotchi" src="/images/toma_pl.png"> 
             </figure>
-            <!-- <figure>
-                <img id="pet_sprite" alt="mew" src="/images/mew_pl(1).png">
-            </figure> -->
         </div>
 
         <div id="pet">
             <figure>
                 <img id="pet_sprite" alt="mew" src="/images/mew_pl1.png">
             </figure>
+
+            <div id="ABC">
+                    <button onclick="win_tog('A')"> A </button> 
+                    <button onclick="win_tog('B')" > B </button> 
+                    <button onclick="win_tog('C')" > C </button>
+            </div>
+            
         </div>
+
+        
 
         <textarea id="txtarea" placeholder="Name Your Pet"></textarea>
         <button onclick="Name()" id="save_name">OK</button>

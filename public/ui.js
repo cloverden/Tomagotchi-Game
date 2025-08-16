@@ -42,6 +42,7 @@ function win_tog(icon) {
     } else {
         if(top_window.dataset.active === icon){
             top_window.style.display = "none"; 
+            return; 
         }
     }
     
@@ -51,6 +52,15 @@ function win_tog(icon) {
             break; 
         case 'flag':
             top_window.style.backgroundImage = "url('images/status_w_pl.png')"; 
+            break; 
+        case 'A': 
+            top_window.style.backgroundImage = "url('images/feed_w_pl.png')"; 
+            break; 
+        case 'B': 
+            top_window.style.backgroundImage = "url('images/clean_w_pl.png')"; 
+            break; 
+        case 'C': 
+            top_window.style.backgroundImage = "url('images/toy_w_pl.png')"; 
             break; 
     }
 
