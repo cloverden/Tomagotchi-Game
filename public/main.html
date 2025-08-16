@@ -20,6 +20,7 @@
 
 
         <div id="toma">
+
             <figure> 
                 <img id="tomagotchi_frame" alt="tomagotchi" src="/images/toma_pl.png"> 
             </figure>
@@ -27,15 +28,15 @@
 
         <div id="pet">
             <figure>
-                <img id="pet_sprite" alt="mew" src="/images/mew_pl1.png">
-            </figure>
+                <img id="pet_sprite" onclick="tap()" onmouseout="tap_out()" alt="mew" src="/images/mew_pl1.png">
+                <img id="note" alt="note" src="images/note_pl.png">
+            </figure>      
+        </div>
 
-            <div id="ABC">
-                    <button onclick="win_tog('A')"> A </button> 
-                    <button onclick="win_tog('B')" > B </button> 
-                    <button onclick="win_tog('C')" > C </button>
-            </div>
-            
+        <div id="ABC">
+            <button onclick="win_tog('A')">  A </button> 
+            <button onclick="win_tog('B')" > B </button> 
+            <button onclick="win_tog('C')" > C </button>
         </div>
 
         

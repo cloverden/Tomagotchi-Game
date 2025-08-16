@@ -15,11 +15,21 @@
 
 #pet {
     display: inline-block;
+    position: relative; 
     height: 300px;
     width: 300px; 
     float: right; 
     margin-right: 185px; 
     margin-top: -378px;
+}
+
+#note {
+    display: none; 
+    position: absolute; 
+    right: 120px; 
+    object-fit: contain; 
+    height: 120px; 
+    width: 120px; 
 }
 
 #pet_sprite { 

@@ -13,6 +13,18 @@ const textArea_b = document.getElementById("save_name");
     }; 
 document.addEventListener("DOMContentLoaded", Name); 
 
+//tap mew 
+var m_note = document.getElementById("note"); 
+function tap() {
+    m_note.style.display = "block"; 
+    console.log("tapped"); 
+}
+function tap_out() {
+    m_note.style.display = "none"; 
+    console.log("tapped out"); 
+}
+setTimeout(tap_out, 3000); 
+
 //textbox visibility 
 txtbox = document.getElementById("textbox"); 
 function txt_tog() {
@@ -20,6 +32,7 @@ function txt_tog() {
         txtbox.style.display = "block"; 
     } else {
         txtbox.style.display = "none"; 
+        return; 
     }
 }
 
