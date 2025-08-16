@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
 const textArea = document.getElementById("txtarea"); 
 const textArea_b = document.getElementById("save_name"); 
 
-    function Name() {
+    function Name() { 
         const name_val = textArea.value; 
         sessionStorage.setItem("petName", name_val); //key, value 
         console.log(name_val); 
@@ -32,6 +32,17 @@ function txtarea_tog()  {
         textArea.style.display = "block"; 
         textArea_b.style.display = "block"; 
     }
+}
+
+//window function 
+var top_window = document.getElementById("win"); 
+function win_tog() { 
+    if(top_window.style.display == "none") {
+        top_window.style.display = "block"; 
+    } else {
+        top_window.style.display = "none"; 
+    }
+    console.log("Window fired"); 
 }
 
 //icons

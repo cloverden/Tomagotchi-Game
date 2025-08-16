@@ -36,6 +36,15 @@
     margin-top: -390px;  */
 } 
 
+/* window boxes */ 
+#win {
+    display: none; 
+    position: absolute; 
+    width: 25%; 
+    height: 25%; 
+    left: 96px; 
+}
+
 #textbox {
     display: none; 
     /* display: flex;  */
