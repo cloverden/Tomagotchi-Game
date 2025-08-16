@@ -40,9 +40,13 @@
 #win {
     display: none; 
     position: absolute; 
-    width: 25%; 
-    height: 25%; 
-    left: 96px; 
+    background-image: url('images/dress_up_w_pl.png');
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    width: 30%; 
+    height: 30%; 
+    left: 56px; 
 }
 
 #textbox {
