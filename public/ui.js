@@ -17,13 +17,13 @@ document.addEventListener("DOMContentLoaded", Name);
 var m_note = document.getElementById("note"); 
 function tap() {
     m_note.style.display = "block"; 
-    console.log("tapped"); 
+    // console.log("tapped"); 
 
     setTimeout(tap_out, 800); //delay
 }
 function tap_out() {
     m_note.style.display = "none"; 
-    console.log("tapped out"); 
+    // console.log("tapped out"); 
 }
 
 //textbox visibility 
@@ -82,31 +82,47 @@ function win_tog(icon) {
     console.log("Window fired via ", icon); 
 }
 
+//light function
+var day_switch = true; 
+var icon = document.getElementById("light_ico"); 
+function light_switch() {
+    if(day_switch) {
+        day_switch = false; 
+        icon.src = "images/moon_pl.png"; 
+        document.body.style.background = "black"; 
+    } else {
+        day_switch = true; 
+        icon.src = "images/sun_pl.png"; 
+        document.body.style.background = "white"; 
+    }
+    console.log("light switched"); 
+}
+
 //icons
 const texter = document.getElementById("text"); 
 function dress_in() {
-    console.log("di_fired"); 
+    // console.log("di_fired"); 
     var info = "Dress up" + " " + sessionStorage.getItem("petName"); 
     texter.style.display = "block"; 
     document.getElementById("text").innerText = info; 
 }; 
 
 function status_in() {
-    console.log("si_fired"); 
+    // console.log("si_fired"); 
     var info = "Check up on" + " " + sessionStorage.getItem("petName"); 
     texter.style.display = "block"; 
     document.getElementById("text").innerText = info; 
 }
 
 function lights_in() {
-    console.log("li_fired"); 
+    // console.log("li_fired"); 
     var info = "Change the lights"; 
     texter.style.display = "block"; 
     document.getElementById("text").innerText = info; 
 }
 
 function mouse_out() {
-    console.log("mo_fired"); 
+    // console.log("mo_fired"); 
     var info = "Text"; 
     document.getElementById("text").innerText = info; 
     texter.style.display = "none";

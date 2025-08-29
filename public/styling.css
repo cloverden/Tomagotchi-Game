@@ -23,6 +23,11 @@
     margin-top: -378px;
 }
 
+#light_ico {
+    position: absolute; 
+    right: 480px; 
+}
+
 #note {
     display: none; 
     position: absolute; 
